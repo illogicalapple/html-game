@@ -21,7 +21,7 @@ customElements.define("game-sprite", class extends HTMLElement {
 		this.shadowRoot.appendChild(style);
 	}
 	static get observedAttributes() {
-		return ["image-url", "x-position", "y-position", "layer"];
+		return ["image-url", "x-position", "y-position", "layer-index"];
 	}
 	get image() {
 		return this.getAttribute("image-url");
